@@ -1,0 +1,27 @@
+def story():
+  print("Once upon a time, there was a dragon who lived by the sea.")
+  print("The dragon was known for setting fire to nearby villages once every five years.")
+  print("he would then come and steal their treasures.")
+  print("This made the villagers angry, so they came together one day and decided to go and fight the dragon.")
+  print("The people sent their strongest warriors to go and fight the dragon.")
+  print("The dragon didn't want to fight, so it left the seaside to go and find a new home.")
+  print("Now he lives in the city and eats the trees and bushes there instead.")
+
+password = 23
+
+attempt_num = 1
+
+while(attempt_num < 4):
+  pass_guess = int(input("Password: "))
+  if(pass_guess != password):
+    if(attempt_num < 3):
+      if(pass_guess > password):
+        print("The password is a smaller number")
+      elif(pass_guess < password):
+        print("The password is a larger number")
+    if(attempt_num == 3):
+      print("You have guessed incorrectly 3 times and can make no more attempts to login.")
+  if(pass_guess == password):
+    print()
+    story()
+  attempt_num = attempt_num + 1
